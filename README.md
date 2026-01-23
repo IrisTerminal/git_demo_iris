@@ -42,7 +42,7 @@ In the terminal, verify git is installed:
 Run:
 
     git clone https://github.com/emoochangu/git_demo.git
-    cd data271-git-collab
+    cd git_demo
 
 (That is the url of this repo :))
 
