@@ -41,10 +41,10 @@ In the terminal, verify git is installed:
 
 Run:
 
-    git clone <REPO_URL>
+    git clone https://github.com/emoochangu/git_demo.git
     cd data271-git-collab
 
-(Your instructor will give you the exact repo URL.)
+(That is the url of this repo :))
 
 ---
 
