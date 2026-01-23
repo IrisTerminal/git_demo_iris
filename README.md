@@ -31,33 +31,38 @@ Go to:
 
 In the terminal, verify git is installed:
 ```bash
-git --version
-Step 2: Clone the repository
+git --version```
+
+## Step 2: Clone the repository
 git clone <REPO_URL>
 cd data271-git-collab
 (Your instructor will give you the exact repo URL.)
-Step 3: Create a branch
+
+## Step 3: Create a branch
 Replace X with your assigned line number.
 git checkout -b line-X
 Example:
 git checkout -b line-7
-Step 4: Edit your line
+
+## Step 4: Edit your line
 In JupyterHub, click lines.txt
 Find your assigned line number
 Edit only that line
 Save the file
 Do not edit any other lines.
-Step 5: Commit your change
+
+## Step 5: Commit your change
 git status
 git add lines.txt
 git commit -m "Edit line X"
 Example:
 git commit -m "Edit line 7"
-Step 6: Create a patch file
+## Step 6: Create a patch file
 git format-patch -1 HEAD
 This creates a file that looks like:
 0001-Edit-line-7.patch
-Step 7: Submit your patch
+
+## Step 7: Submit your patch
 Upload your .patch file to the course submission page as instructed.
 Why we are doing this
 Git is a core tool for data scientists.
