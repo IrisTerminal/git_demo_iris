@@ -15,13 +15,13 @@ You will:
 
 ## Rules (important!)
 
-- You are assigned ONE line number in lines.txt
-- Only edit your assigned line
-- Keep your edit to one sentence
+- You will edit one line in lines.txt
+- Please only edit your assigned line :)
+- You can use whatever flair you want in your edit, however, please try to keep the original context of the passage
 - Do not change any other lines
 - Do not delete line numbers
 
-This mirrors how real data science teams avoid merge conflicts.
+Apparently, this is how real data science teams avoid merge conflicts??
 
 ---
 
@@ -69,17 +69,14 @@ Run:
     git config --global user.email "your@email.com"
 
 Notes:
-- Use your real name.
+- Use your real name, or your pen name if you have one.
 - The email does NOT need to be your GitHub email.
 - This does not send email. It is just stored in your commit history.
 
-(Optional check):
-
-    git config --global --list
 
 ---
 
-## Step 5: Clone YOUR fork (not the instructor repo)
+## Step 5: Clone YOUR fork (not my repo)
 
 Replace YOUR_GITHUB_USERNAME with your GitHub username:
 
@@ -107,10 +104,6 @@ Example:
 
     git checkout -b line-7
 
-(Optional check):
-
-    git branch
-
 ---
 
 ## Step 7: Edit ONLY your assigned line
@@ -133,6 +126,8 @@ Stage and commit:
 
     git add lines.txt
     git commit -m "Edit line X"
+
+The commit message is required and is a description of how you changed the file.
 
 Example:
 
