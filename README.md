@@ -13,12 +13,12 @@ You do **not** need a GitHub account to complete this activity.
 
 ---
 
-## Rules (important!)
+## Directions
 
-- You are assigned **ONE line number** in `lines.txt`
+- You will edit **one line** in `lines.txt`
 - Only edit your assigned line
-- Keep your edit to **one sentence**
-- Do not change any other lines
+- You can edit it with whatever flair you wish, but please try to keep it somewhat cohesive with the entire passage
+- Please do not edit any other lines
 - Do not delete line numbers
 
 This mirrors how real data science teams avoid merge conflicts.
