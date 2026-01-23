@@ -176,39 +176,5 @@ Set:
 
 Submit the Pull Request.
 
-Your instructor will review PRs on the projector and merge them.
+Hopefully we can now will see PRs on the projector and merge them.
 
----
-
-## Browser Option (if terminal push is difficult)
-
-If you cannot push from the terminal, do this instead:
-
-1. Go to your fork on GitHub:
-       https://github.com/YOUR_GITHUB_USERNAME/git_demo
-
-2. Click lines.txt
-
-3. Click the pencil icon to edit
-
-4. Edit ONLY your assigned line
-
-5. When committing on GitHub, choose:
-       Create a new branch for this commit
-
-6. Click:
-       Propose changes
-
-7. Open the Pull Request
-
-This still achieves the main learning goal: collaboration through Pull Requests.
-
----
-
-## Why we are doing this
-
-Git is a standard tool used by data scientists to collaborate safely.
-
-Pull Requests make it possible for many people to work on the same project without overwriting each other’s work.
-
-The story is silly, but the skills are real.
