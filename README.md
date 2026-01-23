@@ -1,4 +1,4 @@
-# Data 271 – Git Collaboration Mini Lab (GitHub Pull Request Version)
+# Data 271 – Git Collaboration Demo
 
 In this activity, you will practice basic git collaboration using GitHub.
 
