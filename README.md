@@ -14,8 +14,9 @@ You do **not** need a GitHub account to complete this activity.
 ---
 
 ## Rules (important!)
+
 - You are assigned **ONE line number** in `lines.txt`
-- **Only edit your assigned line**
+- Only edit your assigned line
 - Keep your edit to **one sentence**
 - Do not change any other lines
 - Do not delete line numbers
@@ -27,35 +28,96 @@ This mirrors how real data science teams avoid merge conflicts.
 ## Step 1: Open a Terminal in JupyterHub
 
 Go to:
-**Files → New → Terminal**
+
+    Files → New → Terminal
 
 In the terminal, verify git is installed:
-```bash
-git --version
-Step 2: Clone the repository
-git clone <REPO_URL>
-cd data271-git-collab
+
+    git --version
+
+---
+
+## Step 2: Clone the repository
+
+Run:
+
+    git clone <REPO_URL>
+    cd data271-git-collab
+
 (Your instructor will give you the exact repo URL.)
-Step 3: Create a branch
-Replace X with your assigned line number.
-git checkout -b line-X
+
+---
+
+## Step 3: Create a branch
+
+Replace X with your assigned line number:
+
+    git checkout -b line-X
+
 Example:
-git checkout -b line-7
-Step 4: Edit your line
-In JupyterHub, click lines.txt
-Find your assigned line number
-Edit only that line
-Save the file
-Do not edit any other lines.
-Step 5: Commit your change
-git status
-git add lines.txt
-git commit -m "Edit line X"
+
+    git checkout -b line-7
+
+---
+
+## Step 4: Edit your assigned line
+
+In JupyterHub:
+
+1. Click `lines.txt`
+2. Find your assigned line number
+3. Edit **only that line**
+4. Save the file
+
+---
+
+## Step 5: Check your git status
+
+Run:
+
+    git status
+
+You should see that `lines.txt` was modified.
+
+---
+
+## Step 6: Commit your change
+
+Run:
+
+    git add lines.txt
+    git commit -m "Edit line X"
+
 Example:
-git commit -m "Edit line 7"
-Step 6: Create a patch file
-git format-patch -1 HEAD
+
+    git commit -m "Edit line 7"
+
+---
+
+## Step 7: Create a patch file
+
+Run:
+
+    git format-patch -1 HEAD
+
 This creates a file that looks like:
-0001-Edit-line-7.patch
-Step 7: Submit your patch
-Upload your .patch file to the course submission page as instructed.
+
+    0001-Edit-line-7.patch
+
+---
+
+## Step 8: Submit your patch
+
+Upload your `.patch` file to the course submission page as instructed.
+
+---
+
+## Why we are doing this
+
+Git is a standard tool used by data scientists to collaborate safely.
+
+This lab demonstrates how multiple people can work on the same file
+**without overwriting each other’s work**, even when not everyone has a
+GitHub account.
+
+The story is silly, but the skills are real.
