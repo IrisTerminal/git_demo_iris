@@ -9,7 +9,7 @@ You will:
 - edit a single line in a shared file
 - commit your change
 - push your branch to GitHub
-- open a Pull Request (PR) so the instructor can merge it live on the projector
+- open a Pull Request (PR) so we can merge your edits
 
 ---
 
@@ -21,7 +21,7 @@ You will:
 - Do not change any other lines
 - Do not delete line numbers
 
-Apparently, this is how real data science teams avoid merge conflicts??
+If you and another person edit the same line, we will create a conflict when we try to merge!
 
 ---
 
@@ -68,8 +68,9 @@ Run:
     git config --global user.name "Your Name"
     git config --global user.email "your@email.com"
 
-Notes:
-- Use your real name, or your pen name if you have one.
+Note:
+- This may just be reguired if you are using JuypterHub?
+- Use your real name, or your pen name if you have one :)
 - The email does NOT need to be your GitHub email.
 - This does not send email. It is just stored in your commit history.
 
@@ -96,6 +97,7 @@ You should see:
 
 ## Step 6: Create a branch for your assigned line
 
+Name your branch.
 Replace X with your assigned line number:
 
     git checkout -b line-X
@@ -111,7 +113,7 @@ Example:
 In JupyterHub:
 1. Click lines.txt
 2. Find your assigned line number
-3. Edit ONLY that line
+3. Edit ONLY that line...to prevent conflicts!
 4. Save the file
 
 Confirm git sees your change:
@@ -152,7 +154,7 @@ Example:
 IMPORTANT:
 - GitHub will ask you to sign in.
 - GitHub does NOT accept passwords for terminal git pushes.
-- If prompted for a password, you must use a Personal Access Token (PAT) instead.
+- If prompted for a password, you will use a Personal Access Token (PAT) instead.
 
 ###PAT: Personal Access Token
 - Click on your user avatar, and hit 'Settings' and then on the left menu on the bottom select '<>Developer Settings'
@@ -179,5 +181,5 @@ Set:
 
 Submit the Pull Request.
 
-Hopefully we can now will see PRs on the projector and merge them.
+Hopefully we can now will see PRs on the git_demo repo and will merge your commits.
 
