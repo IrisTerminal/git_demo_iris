@@ -35,6 +35,13 @@ In the terminal, verify git is installed:
 
     git --version
 
+Then create a signin.
+
+    git config --global user.name "Your Name"
+    git config --global user.email "your@email.com"
+
+You can use your real name. The email does not matter. Since we are collaborating, we also want to track who makes what changes.
+
 ---
 
 ## Step 2: Clone the repository
