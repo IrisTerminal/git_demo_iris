@@ -150,12 +150,15 @@ Example:
     git push -u origin line-7
 
 IMPORTANT:
-- GitHub may ask you to sign in.
+- GitHub will ask you to sign in.
 - GitHub does NOT accept passwords for terminal git pushes.
 - If prompted for a password, you must use a Personal Access Token (PAT) instead.
 
-If pushing from the terminal is difficult today:
-- You can still complete the lab using the “Browser Option” below.
+###PAT: Personal Access Token
+- Click on your user avatar, and hit 'Settings' and then on the left menu on the bottom select '<>Developer Settings'
+- On the left menu, select 'Personal Access Tokens' and choose 'Classic Tokens'
+
+Copy and paste your token into the terminal window. You will not see any text but it is there!
 
 ---
 
