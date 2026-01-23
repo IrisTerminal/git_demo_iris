@@ -1,61 +1,103 @@
-# Data 271 – Git Collaboration Mini Lab
+# Data 271 – Git Collaboration Mini Lab (GitHub Pull Request Version)
 
-In this activity, you will practice **basic git collaboration** using JupyterHub.
+In this activity, you will practice basic git collaboration using GitHub.
 
 You will:
-- clone a repository
+- fork a repository
+- clone your fork in JupyterHub
 - create a branch
 - edit a single line in a shared file
 - commit your change
-- submit your work as a patch file
-
-You do **not** need a GitHub account to complete this activity.
+- push your branch to GitHub
+- open a Pull Request (PR) so the instructor can merge it live on the projector
 
 ---
 
-## Directions
+## Rules (important!)
 
-- You will edit **one line** in `lines.txt`
+- You are assigned ONE line number in lines.txt
 - Only edit your assigned line
-- You can edit it with whatever flair you wish, but please try to keep it somewhat cohesive with the entire passage
-- Please do not edit any other lines
+- Keep your edit to one sentence
+- Do not change any other lines
 - Do not delete line numbers
 
 This mirrors how real data science teams avoid merge conflicts.
 
 ---
 
-## Step 1: Open a Terminal in JupyterHub
+## Step 1: Create a GitHub account (if needed)
 
-Go to:
+If you do not already have a GitHub account, create one now.
+
+---
+
+## Step 2: Fork the class repository
+
+Open the class repository in your browser:
+
+    https://github.com/emoochangu/git_demo
+
+Click:
+
+    Fork
+
+This creates your own copy, for example:
+
+    https://github.com/YOUR_GITHUB_USERNAME/git_demo
+
+---
+
+## Step 3: Open a Terminal in JupyterHub
+
+In JupyterHub:
 
     Files → New → Terminal
 
-In the terminal, verify git is installed:
+Verify git is installed:
 
     git --version
 
-Then create a signin.
+---
+
+## Step 4: Configure your Git identity (one time only)
+
+Git requires a name and email to create commits.
+
+Run:
 
     git config --global user.name "Your Name"
     git config --global user.email "your@email.com"
 
-You can use your real name. The email does not matter. Since we are collaborating, we also want to track who makes what changes.
+Notes:
+- Use your real name.
+- The email does NOT need to be your GitHub email.
+- This does not send email. It is just stored in your commit history.
+
+(Optional check):
+
+    git config --global --list
 
 ---
 
-## Step 2: Clone the repository
+## Step 5: Clone YOUR fork (not the instructor repo)
 
-Run:
+Replace YOUR_GITHUB_USERNAME with your GitHub username:
 
-    git clone https://github.com/emoochangu/git_demo.git
+    git clone https://github.com/YOUR_GITHUB_USERNAME/git_demo.git
     cd git_demo
 
-(That is the url of this repo :))
+Confirm you see the files:
+
+    ls
+
+You should see:
+
+    README.md
+    lines.txt
 
 ---
 
-## Step 3: Create a branch
+## Step 6: Create a branch for your assigned line
 
 Replace X with your assigned line number:
 
@@ -65,32 +107,29 @@ Example:
 
     git checkout -b line-7
 
+(Optional check):
+
+    git branch
+
 ---
 
-## Step 4: Edit your assigned line
+## Step 7: Edit ONLY your assigned line
 
 In JupyterHub:
-
-1. Click `lines.txt`
+1. Click lines.txt
 2. Find your assigned line number
-3. Edit **only that line**
+3. Edit ONLY that line
 4. Save the file
 
----
-
-## Step 5: Check your git status
-
-Run:
+Confirm git sees your change:
 
     git status
 
-You should see that `lines.txt` was modified.
-
 ---
 
-## Step 6: Commit your change
+## Step 8: Commit your change
 
-Run:
+Stage and commit:
 
     git add lines.txt
     git commit -m "Edit line X"
@@ -99,23 +138,75 @@ Example:
 
     git commit -m "Edit line 7"
 
----
+(Optional check):
 
-## Step 7: Create a patch file
-
-Run:
-
-    git format-patch -1 HEAD
-
-This creates a file that looks like:
-
-    0001-Edit-line-7.patch
+    git log --oneline -5
 
 ---
 
-## Step 8: Submit your patch
+## Step 9: Push your branch to GitHub
 
-Upload your `.patch` file to the course submission page as instructed.
+Push your branch:
+
+    git push -u origin line-X
+
+Example:
+
+    git push -u origin line-7
+
+IMPORTANT:
+- GitHub may ask you to sign in.
+- GitHub does NOT accept passwords for terminal git pushes.
+- If prompted for a password, you must use a Personal Access Token (PAT) instead.
+
+If pushing from the terminal is difficult today:
+- You can still complete the lab using the “Browser Option” below.
+
+---
+
+## Step 10: Open a Pull Request (PR)
+
+Go to your fork on GitHub:
+
+    https://github.com/YOUR_GITHUB_USERNAME/git_demo
+
+Click:
+- Pull requests
+- New pull request
+
+Set:
+- Base repository: emoochangu/git_demo
+- Base branch: main
+- Compare branch: your line-X branch
+
+Submit the Pull Request.
+
+Your instructor will review PRs on the projector and merge them.
+
+---
+
+## Browser Option (if terminal push is difficult)
+
+If you cannot push from the terminal, do this instead:
+
+1. Go to your fork on GitHub:
+       https://github.com/YOUR_GITHUB_USERNAME/git_demo
+
+2. Click lines.txt
+
+3. Click the pencil icon to edit
+
+4. Edit ONLY your assigned line
+
+5. When committing on GitHub, choose:
+       Create a new branch for this commit
+
+6. Click:
+       Propose changes
+
+7. Open the Pull Request
+
+This still achieves the main learning goal: collaboration through Pull Requests.
 
 ---
 
@@ -123,8 +214,6 @@ Upload your `.patch` file to the course submission page as instructed.
 
 Git is a standard tool used by data scientists to collaborate safely.
 
-This lab demonstrates how multiple people can work on the same file
-**without overwriting each other’s work**, even when not everyone has a
-GitHub account.
+Pull Requests make it possible for many people to work on the same project without overwriting each other’s work.
 
 The story is silly, but the skills are real.
